@@ -1,0 +1,34 @@
+# Basic Information 
+title: Your name
+position: Your position
+affiliation: Your affiliation
+affiliation_link: https://www.cms.caltech.edu/
+department: Your department
+department_link: https://www.cms.caltech.edu/
+email: yourname (at) example.edu
+address: Your address
+
+# Search Engine Optimization (SEO)
+# The following information is used to improve the website traffic from search engines, e.g., Google.
+keywords: Your name
+description: The description
+canonical: https://jekyll-jemdoc.yliu.me/
+
+# Links 
+# If you don't need one of them, you may delete the corresponding line.
+google_scholar: https://scholar.google.com/
+resume: https://google.com
+
+# Images (e.g., your profile picture and your website's favicon) 
+# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
+avatar: ./assets/img/avatar.png
+favicon: ./assets/img/favicon-caltech.png
+favicon_dark: ./assets/img/favicon-caltech.png
+
+# The following files will be removed from the generated website.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - jekyll-jemdoc.gemspec

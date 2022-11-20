@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+    <meta name="description" content="{{ site.description }}">
+    {% if site.keywords %}
+    <meta name="keywords" content="{{ site.keywords }}">
+    {% endif %}
+    {% if site.canonical %}
+    <link rel="canonical" href="{{ site.canonical }}"/>
+    {% endif %}
+    <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png"/>
+    <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png"/>
+    <meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="./assets/css/jemdocCustom.css" type="text/css" />
+<title>{{ site.title }} | {{site.affiliation}}</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+    {% include navbar.html %}
+<td id="layout-content">
+<h1>{{ site.title }}</h1>
+{% if site.avatar %}
+<table class="imgtable"><tr><td>
+<a href="index.html"><img src="{{site.avatar}}" alt="alt text" height="145px" /></a>&nbsp;</td>
+{% endif %}
+<td align="left">
+<!--
+<p><a href="">{{ site.title }}</a></p>
+-->
+<p>{% if site.position %}
+{{ site.position }}<br />
+{% endif %}
+{% if site.department %}
+<a href="{{site.department_link}}">{{site.department}}</a> <br />
+{% endif %}
+{% if site.affiliation %}
+<a href="{{site.affiliation_link}}">{{site.affiliation}}</a> <br />
+{% endif %}</p>
+<p>
+{% if site.address %}
+{{site.address}}<br />
+{% endif %}
+{% if site.address %}
+Email: {{site.email}} <br />
+{% endif %}
+{% if site.phone %}
+Phone: {{site.phone}} <br />
+{% endif %}</p>
+<p>
+{% if site.google_scholar %}
+<a href="{{site.google_scholar}}">Google Scholar</a> 
+{% endif %}
+{% if site.github_link %} 
+ &middot; <a href="{{ site.github_link }}">Github</a> 
+{% endif %}
+{% if site.linkedin %}
+ &middot; <a href="{{ site.linkedin }}">LinkedIn</a>
+{% endif %}
+{% if site.resume %}
+ &middot; <a href="{{ site.resume }}">Curriculum Vitae</a>
+{% endif %}
+</p>
+</td></tr></table>
+{{ content }}
+
+<!--
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="news.html">More news</a></p>
+</div></div>
+-->
+ 
+<p hidden><script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=0BV5WWkvubBh6O72_ES-0aHY-MlDJXUC2LUHQid3A4A&cl=ffffff&w=a"></script></p>
+<div id="footer">
+<div id="footer-text">
+Powered by <a href="https://github.com/yaoyao-liu/jekyll-jemdoc">Jekyll-jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
