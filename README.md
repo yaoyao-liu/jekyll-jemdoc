@@ -1,5 +1,7 @@
 ## Jekyll + jemdoc
 
+[![LICENSE](https://img.shields.io/github/license/yaoyao-liu/jekyll-jemdoc?style=flat-square&logo=creative-commons&color=EF9421)](https://github.com/yaoyao-liu/jekyll-jemdoc/blob/main/LICENSE)
+
 ### Change basic information
 Edit this file: [_config.yml](_config.yml)
 
